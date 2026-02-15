@@ -37,8 +37,12 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', chatRoutes);
 const path = require('path');
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-console.log("Serving static files from:", path.join(__dirname, 'uploads'));
+if (process.env.IMG_UPLOAD === 'local') {
+    app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+    console.log("Serving static files from:", path.join(__dirname, 'uploads'));
+} else {
+    console.log("Static uploads disabled (IMG_UPLOAD is not 'local')");
+}
 
 const { GEMINI_MODELS, LOCAL_MODELS, ALL_MODELS } = require('./src/utils/constants');
 

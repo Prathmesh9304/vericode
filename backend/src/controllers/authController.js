@@ -142,6 +142,8 @@ exports.updateProfile = async (req, res) => {
 
         // Handle Profile Image
         if (req.file) {
+            console.log("File Uploaded:", req.file);
+            console.log("IMG_UPLOAD Env:", process.env.IMG_UPLOAD);
             // New image uploaded. Delete old one if exists.
             if (userDetails.profileImage) {
                 if (process.env.IMG_UPLOAD === 'cloud') {
