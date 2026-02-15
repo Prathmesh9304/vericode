@@ -1,0 +1,20 @@
+{
+  "name": "vericode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "install:all": "npm install && cd frontend && npm install && cd backend && npm run install:all",
+    "install:backend:python": "cd backend && npm run install:python",
+    "setup:backend:model": "cd backend && npm run setup:llm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
