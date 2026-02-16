@@ -5,21 +5,18 @@ const About = () => {
     const teamMembers = [
         {
             name: "Prathmesh Bhoir",
-            role: "Developer",
-            img: {PrathmeshBhoir},
-            desc: "Ex-Google AI researcher with a passion for developer tools."
+            role: "Student",
+            img: PrathmeshBhoir,
         },
         {
             name: "Om Pimple",
-            role: "Developer",
-            img: {OmPimple},
-            desc: "Systems architect who loves Rust and distributed systems."
+            role: "Student",
+            img: OmPimple,
         },
         {
             name: "Jay Zore",
-            role: "Developer",
-            img: {JayZore},
-            desc: "Product strategist focused on intuitive UX for complex tools."
+            role: "Student",
+            img: JayZore,
         }
     ];
 
@@ -71,9 +68,6 @@ const About = () => {
                                         </div>
                                         <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                                         <div className="text-emerald-400 text-sm font-medium mb-3">{member.role}</div>
-                                        <p className="text-gray-400 text-sm leading-relaxed">
-                                            {member.desc}
-                                        </p>
                                     </div>
                                 </div>
                             ))}
@@ -88,10 +82,6 @@ const About = () => {
                                  </span>
                              </div>
                         </div>
-                         <h2 className="text-3xl font-bold mb-8">Ready to transform your workflow?</h2>
-                         <button className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
-                             View Open Positions
-                         </button>
                      </div>
                 </div>
             </section>

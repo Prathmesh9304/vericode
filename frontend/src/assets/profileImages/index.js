@@ -1,7 +1,6 @@
 import PrathmeshBhoir from "./PrathmeshBhoir.jpg"
-import OmPimple from "./OmPimple.jpg"
-import JayZore from "./JayZore.jpg"
-import KellySmith from "./KellySmith.jpg"
+import OmPimple from "./OmPimple.jpeg"
+import JayZore from "./JayZore.jpeg"
 
 
-export {PrathmeshBhoir, OmPimple, JayZore, KellySmith}
+export {PrathmeshBhoir, OmPimple, JayZore}
